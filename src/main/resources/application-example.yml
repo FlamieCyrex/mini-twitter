@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: mini-twitter
+  datasource:
+    url: jdbc:postgresql://localhost:5432/twitter
+    username: postgres
+    password: password
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
