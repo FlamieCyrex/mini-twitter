@@ -31,3 +31,30 @@ build/
 
 ### VS Code ###
 .vscode/
+
+### Java ###
+*.class
+*.jar
+*.war
+*.ear
+
+*.log
+out/
+
+### Spring Boot ###
+application.yml
+application-*.yml
+!application-example.yml
+
+### IntelliJ IDEA ###
+.idea/
+
+
+### Logs and temp ###
+logs/
+tmp/
+*.tmp
+
+### Docker ###
+/docker-compose.override.yml
+.env
