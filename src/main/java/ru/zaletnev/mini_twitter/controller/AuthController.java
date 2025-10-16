@@ -1,4 +1,4 @@
-package ru.zaletnev.mini_twitter.contoller;
+package ru.zaletnev.mini_twitter.controller;
 
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
