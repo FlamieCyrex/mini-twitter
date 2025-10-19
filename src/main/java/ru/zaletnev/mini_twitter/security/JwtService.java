@@ -6,6 +6,7 @@ import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.io.Decoders;
 import io.jsonwebtoken.security.Keys;
 import jakarta.annotation.PostConstruct;
+import lombok.Getter;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
@@ -17,6 +18,7 @@ import java.util.function.Function;
 public class JwtService {
     @Value("${jwt.secret}")
     private String secretBase64;
+    @Getter
     @Value("${jwt.exptime}")
     private long expTime;
 
