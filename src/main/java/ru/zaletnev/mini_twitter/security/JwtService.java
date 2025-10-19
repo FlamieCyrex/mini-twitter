@@ -18,7 +18,7 @@ public class JwtService {
     @Value("${jwt.secret}")
     private String secretBase64;
     @Value("${jwt.exptime}")
-    private long exptime;
+    private long expTime;
 
     private SecretKey secretKey;
 
@@ -47,7 +47,7 @@ public class JwtService {
 
     public String generateToken(String username) {
         Date now = new Date();
-        Date exp = new Date(now.getTime() + exptime);
+        Date exp = new Date(now.getTime() + expTime);
 
 
         return Jwts.builder()
